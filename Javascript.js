@@ -1,9 +1,11 @@
 function OpenB(){
-    document.getElementsByClassName("sidebar")[0].style.left="0";
+    document.getElementsByClassName("sidebar")[0].style.left = "350px";
 }
+
 function closeMenu() {
-      document.getElementById("sidebar").style.left = "-800px";
+    document.getElementsByClassName("sidebar")[0].style.left = "-350px";
 }
+
 function Display(){
     document.getElementsByClassName("line")[0].style.display="block";
     // document.getElementsByClassName("l")[0].style.backgroundColor="red";
