@@ -694,6 +694,8 @@ a{
     }
     .nav{
       height: 5%;
+      padding-top:10px;
+      padding-bottom:10px;
       margin-bottom:500px;
     }
     .sidebar {
