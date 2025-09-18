@@ -274,6 +274,9 @@ body{
   animation: pulse 1.5s infinite;
   box-shadow: 0 0 8px #007bff;
 }
+button a{
+  color:white
+}
 .projects{
     margin-top: 30px;
     width: 100%;
@@ -580,64 +583,76 @@ a{
     }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
-    .project1{
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .project1,
+    .project2 {
         padding-top: 50px;
         display: grid;
-        grid-template-rows: 1fr 1fr ;
-        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        overflow-x: hidden;
     }
-    .image1 img{
-        margin-left: -40px;
-        width: 105%;
+
+    .image1 img {
+        margin-left: -30px;
+        width: 100%;
+        height: auto;
+        display: block;
     }
-    .image2 img{
-        margin-left: -40px;
-        width: 105%;
+    .image2 img {
+        margin-left: -30px;
+        width: 100%;
+        height: auto;
+        display: block;
     }
-     .project2{
-        padding-top: 50px;
-        display: grid;
-        grid-template-rows: 1fr 1fr ;
-        grid-template-columns: 1fr ;
-    }
-    /* .content1{
-        margin-left: 10px;
-        margin-right: 0px;
-    } */
-    .content1 p{
-        margin-top: 30px;
-        padding-left: 100px;
+    .content1,
+    .content2 {
+        margin-left: -10px;
+        padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .content1 p,
+    .content2 p {
+        margin-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
         line-height: 20px;
         text-align: justify;
     }
-    .cp{
-        padding-left: 80px;
+
+    .btn {
+      margin-right: -100px;
+        width: fit-content;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
     }
-    .content2 p{
-        margin-top: 30px;
-        padding-left: 100px;
-        padding-right: 20px;
-        line-height: 20px;
-        text-align: justify;
-    }
-    .btn{
-        padding-left: 100px;
+    .btn button{
+      font-size: 10px;
+      margin: 20px;
+      margin-right: 10px;
     }
     .head {
         margin-top: 180px;
         text-align: center;
     }
-    .displayskills div{
+
+    .displayskills div {
         margin-top: 30px;
         margin-left: 20px;
     }
-    .line p{
+
+    .line p,
+    .line1 p {
         margin-left: 20px;
     }
-    .line1 p{
-        margin-left: 20px;
-    }
+
     /* Responsive image/text area */
     .h {
         display: flex;
