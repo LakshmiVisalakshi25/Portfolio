@@ -692,12 +692,16 @@ a{
     .nav .menu {
         display: none;
     }
-
+    .nav{
+      height: 5%;
+      margin-bottom:500px;
+    }
     .sidebar {
         width: fit-content;
         display: block;
         height: 100%;
-        padding-top: 60px;
+        padding-top: 150px;
+        z-index:2000;
     }
 
     .sidebar .a {
